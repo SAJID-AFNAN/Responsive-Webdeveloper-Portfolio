@@ -53,7 +53,7 @@ nav a {
     background-color: rgb(251, 247, 242);
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right,top left;
+    background-position: bottom right, top left;
 }
 
 .banner-head {
@@ -225,11 +225,13 @@ footer {
 .footer-section {
     width: 50%;
 }
-.social-link a{
+
+.social-link a {
     margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     display: block;
     margin-bottom: 30px;
@@ -241,6 +243,86 @@ textarea {
     border: 0;
     width: 100%;
 }
-footer .section-common{
+
+footer .section-common {
     margin-bottom: 30px;
+}
+
+
+
+
+
+/* media query section */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+
+    .second-sec-div,
+    .summary,
+    footer,
+    .about-info,
+    .banner,
+    nav,
+    nav>ul {
+        flex-direction: column;
+    }
+
+    .banner-head {
+        font-size: 20px;
+    }
+
+    .banner-title {
+        font-size: 45px;
+    }
+
+    .content {
+        font-size: 12px;
+    }
+
+    .head-button {
+        border-radius: 5px;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    #peru {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+    .banner .photo {
+        width: 100%;
+    }
+}
+
+@media screen and(min-width:576px) and (max-width:960px) {
+    footer {
+        padding: 10px;
+        gap: 50px;
+    }
+
+    /* .second-sec-div,
+    .summary,
+    footer {
+        flex-direction: column;
+    } */
 }
